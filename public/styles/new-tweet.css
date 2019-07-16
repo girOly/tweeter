@@ -1,0 +1,24 @@
+span.counter {
+  font-family: 'Bungee', cursive;
+  text-align: right;
+  float: right;
+}
+
+input {
+  font-family: 'Bungee', cursive;
+  background: #0066bf;
+  color: white;
+  float: left;
+}
+
+textarea {
+  font-weight: bold;
+  text-align: center
+  font-size: 24px;
+  background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid black;
+}
+

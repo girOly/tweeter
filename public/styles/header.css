@@ -1,0 +1,19 @@
+header {
+  font-family: 'Bungee', cursive;
+  position: fixed;
+  width: 100%;
+  /* height: 400px; */
+  background-color: #e09d38;
+  background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  top: 120px;
+  }
+
+header h2 {text-align: center;}
+
+.avatar {
+  padding-top: 1em;
+  margin: auto;
+  text-align: center;
+
+}
