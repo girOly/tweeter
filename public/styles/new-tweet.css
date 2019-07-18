@@ -25,3 +25,14 @@ textarea {
 span.counter.red {
   color: red;
 }
+
+tweetArticle :hover {
+  box-shadow: 10px 10px 5px lightgray;
+  color: #545149;
+  font-weight: bold;
+}
+
+.error {
+  font-weight: bold;
+  color: red;
+}

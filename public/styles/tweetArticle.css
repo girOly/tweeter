@@ -1,0 +1,41 @@
+.tweetArticle {
+  display: flex;
+  margin-top: 3em;
+  padding: 1em;
+  border-width: thin;
+  border: solid black;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tweetArticle .tweetHeader {
+  display: flex;
+   width: 100%;
+  justify-content: space-between;
+  color: lightblue
+
+}
+
+
+.tweetArticle article {
+
+}
+
+
+.tweetArticle footer {
+  border-top: 4px solid black;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.tweetArticle article footer p {
+ margin: 0;
+}
+
+.tweetArticle:hover {
+  box-shadow: 10px 10px 5px lightgray;
+  color: #545149;
+  font-weight: lighter;
+}

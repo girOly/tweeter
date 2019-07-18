@@ -9,3 +9,10 @@ nav {
   color: #FFFFFF;
   padding: 1.5em;
   }
+
+  .arrow {
+  font-family: cursive, cursive;
+  color: white;
+  float: right;
+  text-align: center;
+  }
