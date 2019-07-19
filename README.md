@@ -18,6 +18,5 @@ This repository was based off of some starter code for the project at Lighthouse
 
 ## Final Product
 
-!["Desktop Application"]()
-!["Creating a Tweet"]()
-!["Mobile Application"]()
+!["Desktop Application"](https://github.com/girOly/tweeter/blob/master/public/images/createdTweet.png)
+!["Mobile Application"](https://github.com/girOly/tweeter/blob/master/public/images/mobile.png)
