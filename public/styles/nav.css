@@ -1,18 +1,41 @@
-nav {
-  font-family: 'Bungee', cursive;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 120px;
-  z-index: 7;
-  background-color: #4056A1;
-  color: #FFFFFF;
-  padding: 1.5em;
+@media only screen and (max-width: 1024px) {
+  nav {
+    font-family: "Bungee", cursive;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 7;
+    background-color: #e09d38;
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+    color: #ffffff;
+    padding: 1.5em;
   }
 
   .arrow {
-  font-family: cursive, cursive;
-  color: white;
-  float: right;
-  text-align: center;
+    font-family: cursive, cursive;
+    color: white;
+    float: right;
+    text-align: center;
   }
+}
+@media only screen and (min-width: 1024px) {
+  nav {
+    font-family: "Bungee", cursive;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 7;
+    background-color: #4056a1;
+    color: #ffffff;
+    padding: 1.5em;
+  }
+
+  .arrow {
+    font-family: cursive, cursive;
+    color: white;
+    float: right;
+    text-align: center;
+  }
+}

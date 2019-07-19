@@ -3,36 +3,60 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
- @media only screen and (max-width: 1024px) {}
-   @media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+    font-size: 24px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-top: 120px;
+    display: flex;
+    justify-content:space-between
+    width: 
+    
+  }
+
+  main {
+    width: 25%;
+    text-align: center;
+    color: #545149;
+    background-color: #f4f1ec;
+    margin: 1 auto;
+  }
+}
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   padding-top: 120px;
 }
 
 main {
-  width: 90%;
+  width: 65%;
   text-align: center;
   color: #545149;
   background-color: #f4f1ec;
   margin: 0 auto;
 }
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
