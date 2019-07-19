@@ -1,6 +1,6 @@
+/* Header CSS */
 .main {
   font-family: "Bungee", cursive;
-  /* position: fixed; */
   width: 100%;
   height: 400px;
   background-color: #e09d38;
@@ -27,7 +27,6 @@ header h2 {
   }
   .main {
   font-family: "Bungee", cursive;
-  /* position: fixed; */
   width: 30%;
   display: flex;
   flex-direction:column;

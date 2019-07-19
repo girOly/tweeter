@@ -6,31 +6,7 @@
 
 // Fake data taken from initial-tweets.json
 
-const data = [
-  // {
-  //   user: {
-  //     name: "Newton",
-  //     avatars: "https://i.imgur.com/73hZDYK.png",
-  //     handle: "@SirIsaac"
-  //   },
-  //   content: {
-  //     text:
-  //       "If I have seen further it is by standing on the shoulders of giants"
-  //   },
-  //   created_at: 1461116232227
-  // },
-  // {
-  //   user: {
-  //     name: "Descartes",
-  //     avatars: "https://i.imgur.com/nlhLi3I.png",
-  //     handle: "@rd"
-  //   },
-  //   content: {
-  //     text: "Je pense , donc je suis"
-  //   },
-  //   created_at: 1461113959088
-  // }
-];
+const data = [];
 
 const loadTweets = function() {
   $.get("/tweets").done(function(tweets) {
@@ -55,7 +31,7 @@ const createTweetElement = function(tweet) {
   let $post_handle = $("<h5>");
   let $post_footer = $("<footer>");
   let $post_timestamp = $("<p>").addClass("timestamp");
-  let $post_icon = $("<p>").addClass("icons");
+  let $post_icon = $("<img>").addClass("icons");
   let $post_face = $("<img>");
 
   // Adding content to my elements
@@ -65,6 +41,7 @@ const createTweetElement = function(tweet) {
   $post_handle.text(tweet.user.handle);
   $post_timestamp.text(new Date(tweet.created_at));
   $post_face.attr("src", tweet["user"].avatars);
+  $post_icon.attr("src", "images/icons.png");
 
   // event.preventDefault();
 
@@ -89,7 +66,6 @@ $(document).ready(() => {
   $(".tweetForm").on("submit", event => {
     event.preventDefault();
     let textForm = $(event.target).serialize();
-    // console.log(textForm);
     let postReq = {
       url: "/tweets",
       type: "POST",
@@ -117,11 +93,8 @@ $(document).ready(() => {
       });
     }
   });
-
+  $(".new-tweet").hide();
   $("#clickhere").click(function() {
-    $(".new-tweet").slideToggle("slow", function() {
-      // Animation complete.
-    });
+    $(".new-tweet").slideToggle("slow", function() {});
   });
 });
-// o add it to the page so we can make sure it's got all the right elements, classes, etc.
