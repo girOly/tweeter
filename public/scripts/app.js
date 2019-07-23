@@ -9,6 +9,8 @@
 const data = [];
 
 const loadTweets = function() {
+  $("textarea").val('');
+
   $.get("/tweets").done(function(tweets) {
     renderTweets(tweets);
   });
@@ -79,8 +81,7 @@ $(document).ready(() => {
       $(".errorText")
         .empty()
         .hide();
-      $.ajax(postReq);
-      loadTweets();
+      $.ajax(postReq).done(loadTweets);
     }
     if (formLength > 140) {
       $(".error").show("slow", function() {
