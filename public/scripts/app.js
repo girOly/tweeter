@@ -76,7 +76,6 @@ $(document).ready(() => {
     let formLength = $(event.target)
       .find("textarea")
       .val().length;
-    console.log(formLength);
     if (formLength < 140 && formLength > 0) {
       $(".errorText")
         .empty()
