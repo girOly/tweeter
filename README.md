@@ -21,7 +21,7 @@ This repository was based off of some starter code for the project at Lighthouse
 
 
 ### Desktop Display
-!["Desktop Application"](https://github.com/girOly/tweeter/blob/master/public/images/createdTweet.png)
+!["Desktop Application"](https://github.com/girOly/tweeter/blob/master/public/images/desktop.png)
 
 
 
