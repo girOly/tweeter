@@ -64,7 +64,7 @@ const createTweetElement = function(tweet) {
 
 $(document).ready(() => {
   loadTweets();
-
+// Submit's Text to Tweeter
   $(".tweetForm").on("submit", event => {
     event.preventDefault();
     let textForm = $(event.target).serialize();
@@ -92,6 +92,7 @@ $(document).ready(() => {
         $(".errorText").text("Why you no Type anything?!");
       });
     }
+    // 
   });
   $(".new-tweet").hide();
   $("#clickhere").click(function() {
