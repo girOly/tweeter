@@ -24,7 +24,7 @@ header h2 {
     padding-top: 1em;
     margin: auto;
     text-align: center;
-  }
+    }
   .main {
   font-family: "Bungee", cursive;
   width: 30%;
@@ -37,9 +37,9 @@ header h2 {
   background-image: url("https://www.transparenttextures.com/patterns/connected.png");
   top: 120px;
   z-index: 2;
-}
+  }
 
-header h2 {
+  header h2 {
   text-align: center;
-}
+  }
 }
